@@ -7,6 +7,15 @@
   <link rel="icon" type="image/png" href="icon.png">
   <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#ffebcb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Lt Quiz">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="Lt Quiz">
+  <meta name="msapplication-TileColor" content="#ffebcb">
+  <meta name="msapplication-tap-highlight" content="no">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="apple-touch-startup-image" href="icon.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -778,7 +787,20 @@
         box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         transition: all 0.3s ease;
         display: none;
+        font-size: 14px;
+        min-width: 120px;
       `;
+      
+      // Mobile-specific styling
+      if (window.innerWidth <= 768) {
+        installButton.style.cssText += `
+          top: 10px;
+          right: 10px;
+          padding: 10px 16px;
+          font-size: 12px;
+          min-width: 100px;
+        `;
+      }
       
       installButton.addEventListener('click', installApp);
       installButton.addEventListener('mouseenter', () => {
@@ -793,7 +815,14 @@
 
     // Install app function
     async function installApp() {
-      if (!deferredPrompt) return;
+      if (!deferredPrompt) {
+        // Fallback for browsers that don't support beforeinstallprompt
+        if (navigator.standalone === undefined) {
+          // Show manual install instructions
+          showInstallInstructions();
+        }
+        return;
+      }
       
       // Show the install prompt
       deferredPrompt.prompt();
@@ -809,14 +838,67 @@
         }
       } else {
         console.log('User dismissed the install prompt');
+        // Show manual install instructions
+        showInstallInstructions();
       }
       
       // Clear the deferredPrompt
       deferredPrompt = null;
     }
 
+    // Show manual install instructions
+    function showInstallInstructions() {
+      const instructions = document.createElement('div');
+      instructions.innerHTML = `
+        <div style="
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background: white;
+          padding: 30px;
+          border-radius: 16px;
+          box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+          z-index: 1001;
+          max-width: 400px;
+          text-align: center;
+        ">
+          <h3 style="color: #2c3e50; margin-bottom: 20px;">Install Lt Quiz App</h3>
+          <p style="color: #666; margin-bottom: 20px;">
+            To install this app on your device:
+          </p>
+          <div style="text-align: left; margin-bottom: 20px;">
+            <p><strong>On Android:</strong></p>
+            <ol style="margin-left: 20px; color: #666;">
+              <li>Tap the menu button (⋮)</li>
+              <li>Select "Add to Home screen"</li>
+              <li>Tap "Add" to install</li>
+            </ol>
+            <p><strong>On iPhone:</strong></p>
+            <ol style="margin-left: 20px; color: #666;">
+              <li>Tap the share button (□↑)</li>
+              <li>Select "Add to Home Screen"</li>
+              <li>Tap "Add" to install</li>
+            </ol>
+          </div>
+          <button onclick="this.parentElement.remove()" style="
+            background: linear-gradient(135deg, #f39c12, #ffb43a);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 600;
+          ">Got it!</button>
+        </div>
+      `;
+      document.body.appendChild(instructions);
+    }
+
     // Listen for the beforeinstallprompt event
     window.addEventListener('beforeinstallprompt', (e) => {
+      console.log('beforeinstallprompt event fired');
+      
       // Prevent the mini-infobar from appearing on mobile
       e.preventDefault();
       
@@ -845,6 +927,18 @@
     if (window.matchMedia('(display-mode: standalone)').matches || 
         window.navigator.standalone === true) {
       console.log('App is already installed');
+    } else {
+      // Check if we should show install button on page load
+      setTimeout(() => {
+        if (!deferredPrompt && !installButton) {
+          // If no beforeinstallprompt event fired, show manual install option
+          createInstallButton();
+          if (installButton) {
+            installButton.style.display = 'block';
+            installButton.innerHTML = '<i class="fas fa-download"></i> Install';
+          }
+        }
+      }, 2000); // Wait 2 seconds to see if beforeinstallprompt fires
     }
   </script>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>

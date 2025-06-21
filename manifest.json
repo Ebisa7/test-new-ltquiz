@@ -8,18 +8,46 @@
   "background_color": "#fff7f1",
   "theme_color": "#ffebcb",
   "orientation": "portrait-primary",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["education", "productivity", "utilities"],
+  "prefer_related_applications": false,
   "icons": [
     {
       "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiByeD0iMjQiIGZpbGw9IiNmZmViY2IiLz4KPHJlY3QgeD0iMTIiIHk9IjEyIiB3aWR0aD0iMTY4IiBoZWlnaHQ9IjE2OCIgcng9IjE2IiBmaWxsPSIjZjM5YzEyIi8+CjxjaXJjbGUgY3g9Ijk2IiBjeT0iODAiIHI9IjQwIiBmaWxsPSIjZjM5YzEyIi8+Cjx0ZXh0IHg9Ijk2IiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjQwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPj88L3RleHQ+Cjx0ZXh0IHg9Ijk2IiB5PSIxNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMyYzNlNTAiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlFVSVo8L3RleHQ+Cjwvc3ZnPgo=",
       "type": "image/svg+xml",
       "sizes": "192x192",
-      "purpose": "any"
+      "purpose": "any maskable"
     },
     {
       "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iNjQiIGZpbGw9IiNmZmViY2IiLz4KPHJlY3QgeD0iMzIiIHk9IjMyIiB3aWR0aD0iNDQ4IiBoZWlnaHQ9IjQ0OCIgcng9IjQ4IiBmaWxsPSIjZjM5YzEyIi8+CjxjaXJjbGUgY3g9IjI1NiIgY3k9IjIxMyIgcj0iMTA3IiBmaWxsPSIjZjM5YzEyIi8+Cjx0ZXh0IHg9IjI1NiIgeT0iMjQwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTA3IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPj88L3RleHQ+Cjx0ZXh0IHg9IjI1NiIgeT0iMzczIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNjQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMmMzZTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5RVUlaPC90ZXh0Pgo8L3N2Zz4K",
       "type": "image/svg+xml",
       "sizes": "512x512",
-      "purpose": "any"
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzIiIGhlaWdodD0iNzIiIHZpZXdCb3g9IjAgMCA3MiA3MiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjcyIiBoZWlnaHQ9IjcyIiByeD0iMTgiIGZpbGw9IiNmZmViY2IiLz4KPHJlY3QgeD0iOSIgeT0iOSIgd2lkdGg9IjU0IiBoZWlnaHQ9IjU0IiByeD0iMTIiIGZpbGw9IiNmMzljMTIiLz4KPGNpcmNsZSBjeD0iMzYiIGN5PSIzMCIgcj0iMzAiIGZpbGw9IiNmMzljMTIiLz4KPHRleHQgeD0iMzYiIHk9IjM3LjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIzMCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4/PC90ZXh0Pgo8dGV4dCB4PSIzNiIgeT0iNjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMyYzNlNTAiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlFVSVo8L3RleHQ+Cjwvc3ZnPgo=",
+      "type": "image/svg+xml",
+      "sizes": "72x72",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTYiIGhlaWdodD0iOTYiIHZpZXdCb3g9IjAgMCA5NiA5NiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9Ijk2IiBoZWlnaHQ9Ijk2IiByeD0iMjQiIGZpbGw9IiNmZmViY2IiLz4KPHJlY3QgeD0iMTIiIHk9IjEyIiB3aWR0aD0iNzIiIGhlaWdodD0iNzIiIHJ4PSIxOCIgZmlsbD0iI2YzOWMxMiIvPgo8Y2lyY2xlIGN4PSI0OCIgY3k9IjQwIiByPSIzMCIgZmlsbD0iI2YzOWMxMiIvPgo8dGV4dCB4PSI0OCIgeT0iNTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIzMCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4/PC90ZXh0Pgo8dGV4dCB4PSI0OCIgeT0iODciIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMyYzNlNTAiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlFVSVo8L3RleHQ+Cjwvc3ZnPgo=",
+      "type": "image/svg+xml",
+      "sizes": "96x96",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ0IiBoZWlnaHQ9IjE0NCIgdmlld0JveD0iMCAwIDE0NCAxNDQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxNDQiIGhlaWdodD0iMTQ0IiByeD0iMzYiIGZpbGw9IiNmZmViY2IiLz4KPHJlY3QgeD0iMTgiIHk9IjE4IiB3aWR0aD0iMTA4IiBoZWlnaHQ9IjEwOCIgcng9IjI3IiBmaWxsPSIjZjM5YzEyIi8+CjxjaXJjbGUgY3g9IjcyIiBjeT0iNjAiIHI9IjQ1IiBmaWxsPSIjZjM5YzEyIi8+Cjx0ZXh0IHg9IjcyIiB5PSI3NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjQ1IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPj88L3RleHQ+Cjx0ZXh0IHg9IjcyIiB5PSIxMzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIzNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMyYzNlNTAiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlFVSVo8L3RleHQ+Cjwvc3ZnPgo=",
+      "type": "image/svg+xml",
+      "sizes": "144x144",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTY4IiBoZWlnaHQ9IjE2OCIgdmlld0JveD0iMCAwIDE2OCAxNjgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxNjgiIGhlaWdodD0iMTY4IiByeD0iNDIiIGZpbGw9IiNmZmViY2IiLz4KPHJlY3QgeD0iMjEiIHk9IjIxIiB3aWR0aD0iMTI2IiBoZWlnaHQ9IjEyNiIgcng9IjMxIiBmaWxsPSIjZjM5YzEyIi8+CjxjaXJjbGUgY3g9Ijg0IiBjeT0iNzAiIHI9IjUyIiBmaWxsPSIjZjM5YzEyIi8+Cjx0ZXh0IHg9Ijg0IiB5PSI4Ny41IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNTIiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+PzwvdGV4dD4KPHRleHQgeD0iODQiIHk9IjE1MiIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjQyIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzJjM2U1MCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+UVVJWjwvdGV4dD4KPC9zdmc+Cg==",
+      "type": "image/svg+xml",
+      "sizes": "168x168",
+      "purpose": "any maskable"
     }
   ],
   "shortcuts": [
@@ -31,7 +59,8 @@
       "icons": [
         {
           "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTYiIGhlaWdodD0iOTYiIHZpZXdCb3g9IjAgMCA5NiA5NiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9Ijk2IiBoZWlnaHQ9Ijk2IiByeD0iMTIiIGZpbGw9IiNmZmViY2IiLz4KPHJlY3QgeD0iNiIgeT0iNiIgd2lkdGg9Ijg0IiBoZWlnaHQ9Ijg0IiByeD0iOCIgZmlsbD0iI2YzOWMxMiIvPgo8Y2lyY2xlIGN4PSI0OCIgY3k9IjQwIiByPSIyMCIgZmlsbD0iI2YzOWMxMiIvPgo8dGV4dCB4PSI0OCIgeT0iNDUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyMCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4/PC90ZXh0Pgo8L3N2Zz4K",
-          "sizes": "96x96"
+          "sizes": "96x96",
+          "purpose": "any maskable"
         }
       ]
     },
@@ -43,7 +72,8 @@
       "icons": [
         {
           "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTYiIGhlaWdodD0iOTYiIHZpZXdCb3g9IjAgMCA5NiA5NiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9Ijk2IiBoZWlnaHQ9Ijk2IiByeD0iMTIiIGZpbGw9IiNmZmViY2IiLz4KPHJlY3QgeD0iNiIgeT0iNiIgd2lkdGg9Ijg0IiBoZWlnaHQ9Ijg0IiByeD0iOCIgZmlsbD0iI2YzOWMxMiIvPgo8Y2lyY2xlIGN4PSI0OCIgY3k9IjQwIiByPSIyMCIgZmlsbD0iI2YzOWMxMiIvPgo8dGV4dCB4PSI0OCIgeT0iNDUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyMCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4/PC90ZXh0Pgo8L3N2Zz4K",
-          "sizes": "96x96"
+          "sizes": "96x96",
+          "purpose": "any maskable"
         }
       ]
     },
@@ -55,7 +85,8 @@
       "icons": [
         {
           "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTYiIGhlaWdodD0iOTYiIHZpZXdCb3g9IjAgMCA5NiA5NiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9Ijk2IiBoZWlnaHQ9Ijk2IiByeD0iMTIiIGZpbGw9IiNmZmViY2IiLz4KPHJlY3QgeD0iNiIgeT0iNiIgd2lkdGg9Ijg0IiBoZWlnaHQ9Ijg0IiByeD0iOCIgZmlsbD0iI2YzOWMxMiIvPgo8Y2lyY2xlIGN4PSI0OCIgY3k9IjQwIiByPSIyMCIgZmlsbD0iI2YzOWMxMiIvPgo8dGV4dCB4PSI0OCIgeT0iNDUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyMCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4/PC90ZXh0Pgo8L3N2Zz4K",
-          "sizes": "96x96"
+          "sizes": "96x96",
+          "purpose": "any maskable"
         }
       ]
     },
@@ -67,7 +98,8 @@
       "icons": [
         {
           "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTYiIGhlaWdodD0iOTYiIHZpZXdCb3g9IjAgMCA5NiA5NiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9Ijk2IiBoZWlnaHQ9Ijk2IiByeD0iMTIiIGZpbGw9IiNmZmViY2IiLz4KPHJlY3QgeD0iNiIgeT0iNiIgd2lkdGg9Ijg0IiBoZWlnaHQ9Ijg0IiByeD0iOCIgZmlsbD0iI2YzOWMxMiIvPgo8Y2lyY2xlIGN4PSI0OCIgY3k9IjQwIiByPSIyMCIgZmlsbD0iI2YzOWMxMiIvPgo8dGV4dCB4PSI0OCIgeT0iNDUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyMCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4/PC90ZXh0Pgo8L3N2Zz4K",
-          "sizes": "96x96"
+          "sizes": "96x96",
+          "purpose": "any maskable"
         }
       ]
     }

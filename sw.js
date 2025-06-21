@@ -1,4 +1,4 @@
-const CACHE_NAME = 'lt-quiz-v2';
+const CACHE_NAME = 'lt-quiz-v3';
 const urlsToCache = [
   '/',
   '/index.html',
