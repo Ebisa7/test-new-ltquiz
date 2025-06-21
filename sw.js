@@ -6,7 +6,23 @@ const urlsToCache = [
   '/test.html',
   '/offline.html',
   '/offline.js',
-  '/manifest.json'
+  '/manifest.json',
+  '/icon.png',
+  // Bootstrap CSS
+  'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css',
+  // Google Fonts
+  'https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap',
+  // FontAwesome CSS
+  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css',
+  // FontAwesome font files (woff2 format for better performance)
+  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/webfonts/fa-solid-900.woff2',
+  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/webfonts/fa-regular-400.woff2',
+  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/webfonts/fa-brands-400.woff2',
+  // MathJax
+  'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js',
+  // Firebase scripts
+  'https://www.gstatic.com/firebasejs/9.17.1/firebase-app-compat.js',
+  'https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore-compat.js'
 ];
 
 // Install event - cache all resources
@@ -53,7 +69,7 @@ self.addEventListener('fetch', event => {
           })
           .catch(() => {
             // If offline and requesting HTML, show offline page
-            if (event.request.headers.get('accept').includes('text/html')) {
+            if (event.request.headers.get('accept') && event.request.headers.get('accept').includes('text/html')) {
               return caches.match('/offline.html');
             }
           });
