@@ -56,7 +56,7 @@ Once installed, Lt Quiz will:
 ### App not working offline?
 - Make sure you've downloaded the quizzes while online
 - Check your internet connection
-- Try refreshing the page
+   - Try refreshing the page
 
 ### Shortcuts not working?
 - On Android: Long-press the app icon to see shortcuts
