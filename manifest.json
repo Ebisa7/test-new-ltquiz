@@ -2,21 +2,16 @@
   "name": "Lt Quiz - Interactive Learning App",
   "short_name": "Lt Quiz",
   "description": "Interactive quiz app with offline support for Maths, Science, English, and Oromo",
-  "start_url": "/",
-  "scope": "/",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#fff7f1",
   "theme_color": "#ffebcb",
   "orientation": "portrait-primary",
+  "categories": ["education", "games"],
   "lang": "en",
   "dir": "ltr",
-  "categories": ["education", "productivity", "utilities"],
   "prefer_related_applications": false,
-  "related_applications": [],
-  "iarc_rating_id": "",
-  "edge_side_panel": {
-    "preferred_width": 400
-  },
   "icons": [
     {
       "src": "icon.png",
@@ -34,25 +29,37 @@
       "src": "icon.png",
       "type": "image/png",
       "sizes": "72x72",
-      "purpose": "any maskable"
+      "purpose": "any"
     },
     {
       "src": "icon.png",
       "type": "image/png",
       "sizes": "96x96",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "icon.png",
+      "type": "image/png",
+      "sizes": "128x128",
+      "purpose": "any"
     },
     {
       "src": "icon.png",
       "type": "image/png",
       "sizes": "144x144",
-      "purpose": "any maskable"
+      "purpose": "any"
     },
     {
       "src": "icon.png",
       "type": "image/png",
-      "sizes": "168x168",
-      "purpose": "any maskable"
+      "sizes": "152x152",
+      "purpose": "any"
+    },
+    {
+      "src": "icon.png",
+      "type": "image/png",
+      "sizes": "384x384",
+      "purpose": "any"
     }
   ],
   "shortcuts": [
@@ -65,7 +72,7 @@
         {
           "src": "icon.png",
           "sizes": "96x96",
-          "purpose": "any maskable"
+          "type": "image/png"
         }
       ]
     },
@@ -78,7 +85,7 @@
         {
           "src": "icon.png",
           "sizes": "96x96",
-          "purpose": "any maskable"
+          "type": "image/png"
         }
       ]
     },
@@ -91,7 +98,7 @@
         {
           "src": "icon.png",
           "sizes": "96x96",
-          "purpose": "any maskable"
+          "type": "image/png"
         }
       ]
     },
@@ -104,20 +111,20 @@
         {
           "src": "icon.png",
           "sizes": "96x96",
-          "purpose": "any maskable"
+          "type": "image/png"
         }
       ]
     }
   ],
   "screenshots": [
     {
-      "src": "logo.png",
+      "src": "icon.png",
       "sizes": "512x512",
       "type": "image/png",
       "label": "Lt Quiz Home Page"
     },
     {
-      "src": "logo.png",
+      "src": "icon.png",
       "sizes": "512x512",
       "type": "image/png",
       "label": "Lt Quiz Mobile View"
