@@ -1,4 +1,5 @@
-const CACHE_NAME = 'lt-quiz-v5';
+importScripts("https://progressier.app/sDlEXuRVrmAUw9n76ru9/sw.js" );
+const CACHE_NAME = 'lt-quiz-v6';
 const urlsToCache = [
   '/',
   '/index.html',
